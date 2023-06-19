@@ -5,51 +5,58 @@ You can find the PDF of this paper on: https://ieeexplore.ieee.org/document/1009
 
 ![net](https://github.com/luting-hnu/GMA-Net/blob/main/figure/GMA-Net.png)
 
-**If you have any questions, you can send me an email. My mail address is baibeifang@gmail.com.**
+# GMA-Net
 
-## Datasets
-Download the building change detection dataset. 
-- LEVIR-CD: https://justchenhao.github.io/LEVIR/
-- WHU: https://study.rsgis.whu.edu.cn/pages/download/
+This repository provides the code for the methods and experiments presented in our paper '**Grouped Multi-Attention Network for Hyperspectral Image Spectral-Spatial Classification**'. You can find the PDF of this paper on: https://ieeexplore.ieee.org/document/10091142
 
-In the following experiments, each image in the dataset is pre-cropped into multiple image patches of size 256 × 256.
+![GMA-Net](GMA-Net.png)
+
+**If you have any questions, you can send me an email. My mail address is liumengkai@hnu.edu.cn.**
+
+
+
 ## Directory structure
+
 ```
 path to dataset:
-                ├─train
-                  ├─A
-                  ├─B
-                  ├─label
-                  ├─label_edge
-                ├─val
-                  ├─A
-                  ├─B
-                  ├─label
-                  ├─label_edge
-                ├─test
-                  ├─A
-                  ├─B
-                  ├─label
-                  ├─label_edge
+                ├─Data
+                  ├─PaviaU
+                  	├─PaviaU.mat
+                  	├─PaviaU_gt.mat
+                  	├─PaviaU_eachClass_20_train_1.mat
+                  	├─PaviaU_eachClass_20_test_1.mat
+                  	...
+                  ├─salinas
+                  	├─Salinas_corrected.mat
+                  	├─Salinas_gt.mat
+                  	├─salinas_eachClass_20_train_1.mat
+                  	├─salinas_eachClass_20_test_1.mat
+                  	...
+                  ├─Houston
+                  	├─Houston.mat
+                  	├─Houston_gt.mat
+                  	├─Houston_eachClass_20_train_1.mat
+                    ├─Houston_eachClass_20_test_1.mat
+                    ...
 ```
-## Edge extraction
-```bash
-generate edges.py
+
+## Generate experimental samples
+
+```
+split_Dateset.py
 ```
 
 ## Train
-```bash
-train.py
-```
-## Test
-You can use your own trained model or download our [pre-trained model](https://drive.google.com/file/d/1WhhCof1bfq1JCyHtsgmirGzW6tY0996x/view)
 
-```bash
-test.py
+```
+myNet_new.py
 ```
 
 ## Citation
+
 If you find this paper useful, please cite:
-```bash
-Beifang Bai, Wei Fu, Ting Lu, and Shutao Li, "Edge-Guided Recurrent Convolutional Neural Network for Multitemporal Remote Sensing Image Building Change Detection," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-13, 2022, Art no. 5610613, doi: 10.1109/TGRS.2021.3106697.
+
 ```
+Ting Lu, Mengkai Liu, Wei Fu and Xudong Kang, "Grouped Multi-Attention Network for Hyperspectral Image Spectral-Spatial Classification," in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-12, 2023, Art no. 5507912, doi: 10.1109/TGRS.2023.3263851.
+```
+

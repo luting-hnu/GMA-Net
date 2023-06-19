@@ -5,12 +5,6 @@ You can find the PDF of this paper on: https://ieeexplore.ieee.org/document/1009
 
 ![net](https://github.com/luting-hnu/GMA-Net/blob/main/figure/GMA-Net.png)
 
-# GMA-Net
-
-This repository provides the code for the methods and experiments presented in our paper '**Grouped Multi-Attention Network for Hyperspectral Image Spectral-Spatial Classification**'. You can find the PDF of this paper on: https://ieeexplore.ieee.org/document/10091142
-
-![GMA-Net](GMA-Net.png)
-
 **If you have any questions, you can send me an email. My mail address is liumengkai@hnu.edu.cn.**
 
 
